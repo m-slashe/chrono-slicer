@@ -43,8 +43,6 @@ export class Store {
         try {
             return JSON.parse(this.fs.readFileSync(filePath));
         } catch (error) {
-            console.log(error);
-            // if there was some kind of error, return the passed in defaults instead.
             return defaults;
         }
     }

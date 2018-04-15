@@ -4,5 +4,6 @@ export default {
     APPEND_ISSUE_REFERENCE: 'echo @${path}/issues/${issue}.sql -- Murilo Vicente ${date} - ${issue} >> migracao.txt',
     APPEND_SLASH: 'echo / >> migracao.txt',
     CREATE_ISSUE_FILE: 'type NUL > ${issue}.sql',
-    OPEN_ISSUE: 'start ${issue}.sql'
+    OPEN_ISSUE: 'start ${issue}.sql',
+    GET_BRANCH_NAME: 'git symbolic-ref --short HEAD'
 };

@@ -23,9 +23,16 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "assets/photon-0.1.2-dist/css/photon.css"
+        "assets/photon-0.1.2-dist/css/photon.css",
+        "../node_modules/jquery.fancytree/dist/skin-win8/ui.fancytree.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "fixes/fixJquery.js",
+        "../node_modules/jquery.fancytree/dist/jquery.fancytree.min.js",
+        "../node_modules/jquery.fancytree/dist/modules/jquery.fancytree.edit.js",
+        "fixes/fixFancyTree.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

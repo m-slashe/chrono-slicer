@@ -1,4 +1,5 @@
 export default {
-    SCRIPTS_ROOT_PATH: 'C:\\Users\\muril\\Desktop\\testelectron\\angular-electron\\tests',
-    SCRIPTS_ISSUE_PATH: 'C:\\Users\\muril\\Desktop\\testelectron\\angular-electron\\tests\\issues'
+    SCRIPTS_ROOT_PATH: 'C:\\temp\\tests',
+    SCRIPTS_ISSUE_PATH: 'C:\\temp\\tests\\issues',
+    MODULOS_PATH: 'C:\\temp\\modules'
 };

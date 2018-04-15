@@ -18,6 +18,7 @@ export class ScriptsComponent implements OnInit {
     editor: any;
 
     constructor() {
+        this.currentScript = new Script();
     }
 
     ngOnInit() {
@@ -26,11 +27,15 @@ export class ScriptsComponent implements OnInit {
             defaults: {}
         });
         this.scripts = this.store.get('scripts') || [];
+        if (this.scripts.length) {
+            this.currentScript = this.scripts[0];
+        }
+        this.createEditor();
     }
 
     createScript() {
         this.currentScript = new Script();
-        this.editor.setValue('');
+        this.editor.setValue(this.currentScript.code);
     }
 
     saveScript() {
@@ -63,18 +68,19 @@ export class ScriptsComponent implements OnInit {
 
     }
 
+    createEditor() {
+        this.editor = ace.edit('editor');
+        this.editor.setTheme('ace/theme/monokai');
+        this.editor.session.setMode('ace/mode/javascript');
+        this.editor.setValue(this.currentScript.code);
+        this.editor.clearSelection();
+        this.editor.on('change', () => {
+            this.currentScript.code = this.editor.getValue();
+        });
+    }
+
     changeScript() {
-        if (this.currentScript) {
-            setTimeout(() => {
-                this.editor = ace.edit('editor');
-                this.editor.setTheme('ace/theme/monokai');
-                this.editor.session.setMode('ace/mode/javascript');
-                this.editor.setValue(this.currentScript.code);
-                this.editor.clearSelection();
-                this.editor.on('change', () => {
-                    this.currentScript.code = this.editor.getValue();
-                });
-            }, 100);
-        }
+        this.editor.setValue(this.currentScript.code);
+        this.editor.clearSelection();
     }
 }

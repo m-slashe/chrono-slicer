@@ -67,6 +67,8 @@ try {
     }
   });
 
+    app.commandLine.appendSwitch('remote-debugging-port', '9222');
+
 } catch (e) {
   // Catch Error
   // throw e;

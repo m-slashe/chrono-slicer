@@ -1,1 +1,6 @@
-<p>Modulos</p>
+<div *ngFor="let modulo of modulos">
+    <label>Name: {{modulo.name}}</label>
+    <label>Branch: {{modulo.branch}}</label>
+    <label>Folder Tree Updated: {{modulo.folderTreeUpdated}}</label>
+</div>
+<div id="tree"></div>
