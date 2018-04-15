@@ -1,0 +1,14 @@
+<select [(ngModel)]="currentScript" (ngModelChange)="changeScript()">
+    <option [ngValue]="script" *ngFor="let script of scripts">{{script.name}}</option>
+</select>
+<button (click)="createScript()">New Script</button>
+<div *ngIf="currentScript">
+    <br>
+    <input [(ngModel)]="currentScript.name" type="text">
+    <br>
+    <div style="width: 400px;height: 150px" id="editor"></div>
+    <br>
+    <button (click)="runScript()" >Testar</button>
+    <button (click)="saveScript()" >Salvar</button>
+    <button (click)="removeScript()" >Remover</button>
+</div>

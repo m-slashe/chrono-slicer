@@ -1,0 +1,12 @@
+/ 
+/ 
+@C:\Users\muril\Desktop\testelectron\angular-electron\tests/issues/ISSUE-1.sql -- Murilo Vicente 6/3/2018 - ISSUE-1%n%/ 
+@C:\Users\muril\Desktop\testelectron\angular-electron\tests/issues/ISSUE-3.sql -- Murilo Vicente 6/3/2018 - ISSUE-3%n%/ 
+@C:\Users\muril\Desktop\testelectron\angular-electron\testsissues${issue}.sql -- Murilo Vicente 6/3/2018 - ISSUE-2 %n% / 
+@C:\Users\muril\Desktop\testelectron\angular-electron\testsissuesISSUE-1.sql -- Murilo Vicente 6/3/2018 - ISSUE-1 %n% / 
+@C:\Users\muril\Desktop\testelectron\angular-electron\tests/issues/ISSUE-1.sql -- Murilo Vicente 6/3/2018 - ISSUE-1 
+/ 
+@C:\Users\muril\Desktop\testelectron\angular-electron\tests/issues/ISSUE-1.sql -- Murilo Vicente 6/3/2018 - ISSUE-1 
+/ 
+@C:\Users\muril\Desktop\testelectron\angular-electron\tests/issues/ISSUE-3.sql -- Murilo Vicente 6/3/2018 - ISSUE-3 
+/ 

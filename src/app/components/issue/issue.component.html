@@ -1,0 +1,9 @@
+<div>
+    <select [(ngModel)]="selectedIssue" (ngModelChange)="changeIssue()" class="form-control">
+        <option [ngValue]="issue" *ngFor="let issue of issues">{{issue.getName()}}</option>
+    </select>
+    <button *ngIf="!fileAlreadyExists()" class="btn btn-default" (click)="createIssue()">Create Issue Files</button>
+    <button *ngIf="fileAlreadyExists()" class="btn btn-default" (click)="openIssue()">Open Issue</button>
+    <button class="btn btn-default" (click)="openJIRA()">Open JIRA</button>
+    <button class="btn btn-default" (click)="createUniLive()">createUniLive</button>
+</div>
